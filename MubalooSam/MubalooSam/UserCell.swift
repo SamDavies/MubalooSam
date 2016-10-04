@@ -23,6 +23,6 @@ class UserCell: UITableViewCell {
         name.text = "\(user.firstName) \(user.lastName)"
         role.text = user.role
         
-//        self.profileImage.kf_setImageWithURL(NSURL(string: user.profileImageURL)!, placeholderImage: UIImage(named: "default.jpg"))
+        self.profileImage.kf.setImage(with: URL(string: user.profileImageURL)!, placeholder: UIImage(named: "default.jpg"))
     }
 }
