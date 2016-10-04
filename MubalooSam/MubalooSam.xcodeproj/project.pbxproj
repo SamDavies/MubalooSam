@@ -19,6 +19,12 @@
 		B90C69E51DA43770009F5718 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69E41DA43770009F5718 /* User.swift */; };
 		B90C69E71DA43921009F5718 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69E61DA43921009F5718 /* Team.swift */; };
 		B90C69E91DA43946009F5718 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69E81DA43946009F5718 /* Company.swift */; };
+		B90C69F01DA4519E009F5718 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69EF1DA4519E009F5718 /* AppReducer.swift */; };
+		B90C69F31DA45233009F5718 /* CompanyReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69F21DA45233009F5718 /* CompanyReducer.swift */; };
+		B90C69F51DA4560A009F5718 /* CompanyActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69F41DA4560A009F5718 /* CompanyActions.swift */; };
+		B90C69F71DA459C0009F5718 /* CompanyCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */; };
+		B90C69F91DA45DFC009F5718 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69F81DA45DFC009F5718 /* UserCell.swift */; };
+		B90C69FB1DA4658B009F5718 /* TeamHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69FA1DA4658B009F5718 /* TeamHeaderCell.swift */; };
 		D18A9B7B785E0D210A0C4D12 /* Pods_MubalooSamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E76F89E2C635ACC434C733D /* Pods_MubalooSamTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +68,12 @@
 		B90C69E41DA43770009F5718 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B90C69E61DA43921009F5718 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B90C69E81DA43946009F5718 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		B90C69EF1DA4519E009F5718 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		B90C69F21DA45233009F5718 /* CompanyReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyReducer.swift; sourceTree = "<group>"; };
+		B90C69F41DA4560A009F5718 /* CompanyActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyActions.swift; sourceTree = "<group>"; };
+		B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCtrl.swift; sourceTree = "<group>"; };
+		B90C69F81DA45DFC009F5718 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B90C69FA1DA4658B009F5718 /* TeamHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamHeaderCell.swift; sourceTree = "<group>"; };
 		C2F3F087C3488FF062C086F2 /* Pods-MubalooSamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSamTests/Pods-MubalooSamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C56B11C042D837E854574CC3 /* Pods-MubalooSamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSamUITests/Pods-MubalooSamUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1A99283802DBBD22A290023 /* Pods-MubalooSam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSam/Pods-MubalooSam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,13 +132,14 @@
 		B90C69B51DA4359B009F5718 /* MubalooSam */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69EA1DA4394B009F5718 /* Models */,
+				B90C69F11DA451EC009F5718 /* Company */,
 				B90C69B61DA4359B009F5718 /* AppDelegate.swift */,
 				B90C69B81DA4359B009F5718 /* ViewController.swift */,
 				B90C69BA1DA4359B009F5718 /* Main.storyboard */,
 				B90C69BD1DA4359B009F5718 /* Assets.xcassets */,
 				B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */,
 				B90C69C21DA4359B009F5718 /* Info.plist */,
+				B90C69EF1DA4519E009F5718 /* AppReducer.swift */,
 			);
 			path = MubalooSam;
 			sourceTree = "<group>";
@@ -149,14 +162,59 @@
 			path = MubalooSamUITests;
 			sourceTree = "<group>";
 		};
-		B90C69EA1DA4394B009F5718 /* Models */ = {
+		B90C69EA1DA4394B009F5718 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				B90C69E41DA43770009F5718 /* User.swift */,
 				B90C69E61DA43921009F5718 /* Team.swift */,
 				B90C69E81DA43946009F5718 /* Company.swift */,
 			);
-			name = Models;
+			name = models;
+			sourceTree = "<group>";
+		};
+		B90C69EB1DA450DA009F5718 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				B90C69F41DA4560A009F5718 /* CompanyActions.swift */,
+			);
+			name = actions;
+			sourceTree = "<group>";
+		};
+		B90C69EC1DA450E4009F5718 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				B90C69F81DA45DFC009F5718 /* UserCell.swift */,
+				B90C69FA1DA4658B009F5718 /* TeamHeaderCell.swift */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
+		B90C69ED1DA45122009F5718 /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+				B90C69F21DA45233009F5718 /* CompanyReducer.swift */,
+			);
+			name = reducers;
+			sourceTree = "<group>";
+		};
+		B90C69EE1DA45127009F5718 /* containers */ = {
+			isa = PBXGroup;
+			children = (
+				B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */,
+			);
+			name = containers;
+			sourceTree = "<group>";
+		};
+		B90C69F11DA451EC009F5718 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				B90C69EE1DA45127009F5718 /* containers */,
+				B90C69ED1DA45122009F5718 /* reducers */,
+				B90C69EC1DA450E4009F5718 /* components */,
+				B90C69EB1DA450DA009F5718 /* actions */,
+				B90C69EA1DA4394B009F5718 /* models */,
+			);
+			name = Company;
 			sourceTree = "<group>";
 		};
 		DB6DE6A8E511F3866EBA4077 /* Frameworks */ = {
@@ -450,11 +508,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90C69F71DA459C0009F5718 /* CompanyCtrl.swift in Sources */,
+				B90C69F01DA4519E009F5718 /* AppReducer.swift in Sources */,
 				B90C69B91DA4359B009F5718 /* ViewController.swift in Sources */,
+				B90C69FB1DA4658B009F5718 /* TeamHeaderCell.swift in Sources */,
 				B90C69E51DA43770009F5718 /* User.swift in Sources */,
 				B90C69E71DA43921009F5718 /* Team.swift in Sources */,
+				B90C69F31DA45233009F5718 /* CompanyReducer.swift in Sources */,
 				B90C69B71DA4359B009F5718 /* AppDelegate.swift in Sources */,
 				B90C69E91DA43946009F5718 /* Company.swift in Sources */,
+				B90C69F91DA45DFC009F5718 /* UserCell.swift in Sources */,
+				B90C69F51DA4560A009F5718 /* CompanyActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
