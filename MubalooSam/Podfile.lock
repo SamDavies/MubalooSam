@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Kingfisher (3.1.1)
+  - PromiseKit (4.0.3):
+    - PromiseKit/Foundation (= 4.0.3)
+    - PromiseKit/QuartzCore (= 4.0.3)
+    - PromiseKit/UIKit (= 4.0.3)
+  - PromiseKit/CorePromise (4.0.3)
+  - PromiseKit/Foundation (4.0.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.0.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.0.3):
+    - PromiseKit/CorePromise
+  - ReSwift (2.1.0)
+  - SwiftyJSON (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - PromiseKit
+  - ReSwift (= 2.1.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Kingfisher: 12b755ae697cc9f0fd3e550db8417fa1233e09ab
+  PromiseKit: dfe8fcc6445674fb23378d89990838c1cbdbf05a
+  ReSwift: c13b76cb963c5ab2a137c9c6e74823cef4b81588
+  SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
+
+PODFILE CHECKSUM: d015ae1dd542bc2a2b2b1420f6beb646a629e356
+
+COCOAPODS: 1.0.1
