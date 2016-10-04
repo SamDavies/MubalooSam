@@ -54,7 +54,7 @@ extension CompanyCtrl {
     }
 }
 
-//MARK: Collection view methods
+//MARK: Table view methods
 
 extension CompanyCtrl {
     

@@ -30,16 +30,19 @@
                                             <frame key="frameInset" width="375" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyh-k1-cgG">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyh-k1-cgG">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="cmg-1H-W95"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="topMargin" secondItem="pyh-k1-cgG" secondAttribute="top" id="EDm-ef-gie"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="pyh-k1-cgG" secondAttribute="trailing" id="Il1-Oy-Lph"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="pyh-k1-cgG" secondAttribute="bottom" id="fjh-hb-1QC"/>
+                                                <constraint firstItem="pyh-k1-cgG" firstAttribute="centerY" secondItem="lQt-ta-ODg" secondAttribute="centerY" id="dax-CT-baC"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="pyh-k1-cgG" secondAttribute="leading" id="jiy-oC-cCM"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -89,13 +92,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkr-Ne-o4r">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.26274509800000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Sam's Mubaloo Staff" id="xb7-i8-SM4"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="tg7-5W-g0G" secondAttribute="bottom" id="Uze-ko-kqd"/>
                             <constraint firstAttribute="trailing" secondItem="tg7-5W-g0G" secondAttribute="trailing" id="kIA-ae-Sdw"/>
                             <constraint firstItem="tg7-5W-g0G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s6f-Zm-Les"/>
-                            <constraint firstAttribute="topMargin" secondItem="tg7-5W-g0G" secondAttribute="top" id="vYF-Tk-NhV"/>
+                            <constraint firstAttribute="topMargin" secondItem="tg7-5W-g0G" secondAttribute="top" constant="-44" id="vYF-Tk-NhV"/>
                         </constraints>
                     </view>
                     <connections>
