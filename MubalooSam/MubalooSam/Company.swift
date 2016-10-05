@@ -30,6 +30,8 @@ class Company {
             if let _ = subJson["id"].string {
                 // parse the ceo json
                 ceo = User(json: subJson)
+                // give the CEO his own team
+                teams.append(Team(teamName: "CEO", members: [ceo!]))
             } else {
                 // this is the json for a team
                 teams.append(Team(json: subJson))
