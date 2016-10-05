@@ -132,11 +132,10 @@
 		B90C69B51DA4359B009F5718 /* MubalooSam */ = {
 			isa = PBXGroup;
 			children = (
+				B90C6A001DA53D0A009F5718 /* Storyboards */,
 				B90C69F11DA451EC009F5718 /* Company */,
 				B90C69B61DA4359B009F5718 /* AppDelegate.swift */,
-				B90C69BA1DA4359B009F5718 /* Main.storyboard */,
 				B90C69BD1DA4359B009F5718 /* Assets.xcassets */,
-				B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */,
 				B90C69C21DA4359B009F5718 /* Info.plist */,
 				B90C69EF1DA4519E009F5718 /* AppReducer.swift */,
 			);
@@ -215,6 +214,15 @@
 				B90C69EA1DA4394B009F5718 /* models */,
 			);
 			name = Company;
+			sourceTree = "<group>";
+		};
+		B90C6A001DA53D0A009F5718 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B90C69BA1DA4359B009F5718 /* Main.storyboard */,
+				B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		DB6DE6A8E511F3866EBA4077 /* Frameworks */ = {
