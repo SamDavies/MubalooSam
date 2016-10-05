@@ -10,7 +10,6 @@
 		2CA8CE7BC5BDD90675247A7D /* Pods_MubalooSamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F466A636B980D7917722E1 /* Pods_MubalooSamUITests.framework */; };
 		B19E30A9C2175A1179AB26F4 /* Pods_MubalooSam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0E12673FFC423F9BE21982 /* Pods_MubalooSam.framework */; };
 		B90C69B71DA4359B009F5718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69B61DA4359B009F5718 /* AppDelegate.swift */; };
-		B90C69B91DA4359B009F5718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69B81DA4359B009F5718 /* ViewController.swift */; };
 		B90C69BC1DA4359B009F5718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C69BA1DA4359B009F5718 /* Main.storyboard */; };
 		B90C69BE1DA4359B009F5718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90C69BD1DA4359B009F5718 /* Assets.xcassets */; };
 		B90C69C11DA4359B009F5718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */; };
@@ -25,6 +24,7 @@
 		B90C69F71DA459C0009F5718 /* CompanyCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */; };
 		B90C69F91DA45DFC009F5718 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69F81DA45DFC009F5718 /* UserCell.swift */; };
 		B90C69FB1DA4658B009F5718 /* TeamHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69FA1DA4658B009F5718 /* TeamHeaderCell.swift */; };
+		B90C69FF1DA4FCA1009F5718 /* UserDetailCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C69FE1DA4FCA1009F5718 /* UserDetailCtrl.swift */; };
 		D18A9B7B785E0D210A0C4D12 /* Pods_MubalooSamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E76F89E2C635ACC434C733D /* Pods_MubalooSamTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,6 @@
 		AF9DF31AADDA88855707F50F /* Pods-MubalooSamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSamTests/Pods-MubalooSamTests.release.xcconfig"; sourceTree = "<group>"; };
 		B90C69B31DA4359B009F5718 /* MubalooSam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MubalooSam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90C69B61DA4359B009F5718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B90C69B81DA4359B009F5718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B90C69BB1DA4359B009F5718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B90C69BD1DA4359B009F5718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B90C69C01DA4359B009F5718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCtrl.swift; sourceTree = "<group>"; };
 		B90C69F81DA45DFC009F5718 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		B90C69FA1DA4658B009F5718 /* TeamHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamHeaderCell.swift; sourceTree = "<group>"; };
+		B90C69FE1DA4FCA1009F5718 /* UserDetailCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailCtrl.swift; sourceTree = "<group>"; };
 		C2F3F087C3488FF062C086F2 /* Pods-MubalooSamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSamTests/Pods-MubalooSamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C56B11C042D837E854574CC3 /* Pods-MubalooSamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSamUITests/Pods-MubalooSamUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1A99283802DBBD22A290023 /* Pods-MubalooSam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MubalooSam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MubalooSam/Pods-MubalooSam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +134,6 @@
 			children = (
 				B90C69F11DA451EC009F5718 /* Company */,
 				B90C69B61DA4359B009F5718 /* AppDelegate.swift */,
-				B90C69B81DA4359B009F5718 /* ViewController.swift */,
 				B90C69BA1DA4359B009F5718 /* Main.storyboard */,
 				B90C69BD1DA4359B009F5718 /* Assets.xcassets */,
 				B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */,
@@ -201,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */,
+				B90C69FE1DA4FCA1009F5718 /* UserDetailCtrl.swift */,
 			);
 			name = containers;
 			sourceTree = "<group>";
@@ -510,7 +510,7 @@
 			files = (
 				B90C69F71DA459C0009F5718 /* CompanyCtrl.swift in Sources */,
 				B90C69F01DA4519E009F5718 /* AppReducer.swift in Sources */,
-				B90C69B91DA4359B009F5718 /* ViewController.swift in Sources */,
+				B90C69FF1DA4FCA1009F5718 /* UserDetailCtrl.swift in Sources */,
 				B90C69FB1DA4658B009F5718 /* TeamHeaderCell.swift in Sources */,
 				B90C69E51DA43770009F5718 /* User.swift in Sources */,
 				B90C69E71DA43921009F5718 /* Team.swift in Sources */,

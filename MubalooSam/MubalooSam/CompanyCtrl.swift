@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 import PromiseKit
 import ReSwift
 
@@ -26,7 +25,6 @@ class CompanyCtrl: UIViewController, StoreSubscriber, UITableViewDataSource, UIT
         refreshControl.addTarget(self, action: #selector(CompanyCtrl.getInitialData), for: UIControlEvents.valueChanged)
         self.table.addSubview(refreshControl)
     }
-    
 }
 
 //MARK: Main Redux Methods
@@ -86,6 +84,11 @@ extension CompanyCtrl {
         return mainStore.state.companyState.company!.teams[section].teamName
     }
     
+    // section header height
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 48.0
+    }
+    
     // section header cell
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = table.dequeueReusableCell(withIdentifier: "TeamHeaderCell") as! TeamHeaderCell
@@ -105,11 +108,11 @@ extension CompanyCtrl {
     }
     
     // selection of cell
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    @objc(tableView:didSelectRowAtIndexPath:) func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let company = mainStore.state.companyState.company!
         let user = company.teams[indexPath.section].members[indexPath.row]
         mainStore.dispatch(SetSelectedUser(selectedUser: user))
-        self.performSegue(withIdentifier: "userDetail", sender: self)
+        self.performSegue(withIdentifier: "UserDetail", sender: self)
     }
     
 }
