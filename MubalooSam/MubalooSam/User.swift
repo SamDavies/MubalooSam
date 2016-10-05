@@ -8,34 +8,25 @@
 
 import Foundation
 import SwiftyJSON
+import RealmSwift
 
-class User {
+class User: Object {
     
-    let id: String
-    let firstName: String
-    let lastName: String
-    let role: String
-    let profileImageURL: String
-    let teamLead: Bool
+    dynamic var id: String = ""
+    dynamic var firstName: String = ""
+    dynamic var lastName: String = ""
+    dynamic var role: String = ""
+    dynamic var profileImageURL: String = ""
+    dynamic var teamLead: Bool = false
     
-    init(id: String, firstName: String, lastName: String, role: String, profileImageURL: String, teamLead: Bool) {
-        self.id = id
-        self.firstName = firstName
-        self.lastName = lastName
-        self.role = role
-        self.profileImageURL = profileImageURL
-        self.teamLead = teamLead
-    }
-    
-    convenience init(json: JSON) {
-        let id = json["id"].string!
-        let firstName = json["firstName"].string!
-        let lastName = json["lastName"].string!
-        let role = json["role"].string!
-        let profileImageURL = json["profileImageURL"].string!
-        let teamLead = json["firstName"].bool ?? false
-        
-        self.init(id: id, firstName: firstName, lastName: lastName, role: role, profileImageURL: profileImageURL, teamLead: teamLead)
+    func fromJson(json: JSON) -> User {
+        id = json["id"].string!
+        firstName = json["firstName"].string!
+        lastName = json["lastName"].string!
+        role = json["role"].string!
+        profileImageURL = json["profileImageURL"].string!
+        teamLead = json["firstName"].bool ?? false
+        return self
     }
 }
 

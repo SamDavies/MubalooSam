@@ -10,35 +10,31 @@ import Foundation
 import PromiseKit
 import Alamofire
 import SwiftyJSON
+import RealmSwift
 
-class Company {
+class Company: Object {
     
-    let ceo: User
-    let teams: [Team]
+    dynamic var ceo: User? = User()
+    let teams = List<Team>()
     
-    init(ceo: User, teams: [Team]) {
-        self.ceo = ceo
-        self.teams = teams
-    }
-    
-    convenience init(json: JSON) {
-        var ceo: User?
-        var teams: [Team] = []
+    func fromJson(json: JSON) -> Company {
         
         for (_, subJson): (String, JSON) in json {
             // check if this is the json for a user
             if let _ = subJson["id"].string {
                 // parse the ceo json
-                ceo = User(json: subJson)
+                ceo = ceo?.fromJson(json: subJson)
                 // give the CEO his own team
-                teams.append(Team(teamName: "CEO", members: [ceo!]))
+                let ceoTeam = Team()
+                ceoTeam.teamName = "CEO"
+                ceoTeam.members.append(ceo!)
+                teams.append(ceoTeam)
             } else {
                 // this is the json for a team
-                teams.append(Team(json: subJson))
+                teams.append(Team().fromJson(json: subJson))
             }
         }
-        
-        self.init(ceo: ceo!, teams: teams)
+        return self
     }
 }
 
@@ -53,7 +49,7 @@ extension Company {
                     response in
                     switch response.result {
                     case .success(let data):
-                        fulfill(Company(json: SwiftyJSON.JSON(data: data)))
+                        fulfill(Company().fromJson(json: SwiftyJSON.JSON(data: data)))
                     case .failure(let error):
                         print("Request failed with error: \(error)")
                         reject(error)

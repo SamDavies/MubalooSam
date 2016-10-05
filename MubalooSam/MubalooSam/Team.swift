@@ -8,25 +8,19 @@
 
 import Foundation
 import SwiftyJSON
+import RealmSwift
 
-class Team {
+class Team: Object {
     
-    let teamName: String
-    let members: [User]
+    dynamic var teamName: String = ""
+    let members = List<User>()
     
-    init(teamName: String, members: [User]) {
-        self.teamName = teamName
-        self.members = members
-    }
-    
-    convenience init(json: JSON) {
-        let teamName = json["teamName"].string!
-        var members: [User] = []
+    func fromJson(json: JSON) -> Team {
+        teamName = json["teamName"].string!
         
         for (_, subJson): (String, JSON) in json["members"] {
-            members.append(User(json: subJson))
+            members.append(User().fromJson(json: subJson))
         }
-        
-        self.init(teamName: teamName, members: members)
+        return self
     }
 }

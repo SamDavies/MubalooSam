@@ -44,6 +44,7 @@ extension CompanyCtrl {
     }
     
     func getInitialData() {
+        mainStore.dispatch(getCompanyFromDisk)
         mainStore.dispatch(getCompanyFromWeb)
     }
     
