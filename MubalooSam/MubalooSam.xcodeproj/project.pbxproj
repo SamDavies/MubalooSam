@@ -110,12 +110,12 @@
 		B90C69AA1DA4359B009F5718 = {
 			isa = PBXGroup;
 			children = (
+				DB6DE6A8E511F3866EBA4077 /* Frameworks */,
 				B90C69B51DA4359B009F5718 /* MubalooSam */,
 				B90C69CA1DA4359B009F5718 /* MubalooSamTests */,
 				B90C69D51DA4359B009F5718 /* MubalooSamUITests */,
-				B90C69B41DA4359B009F5718 /* Products */,
 				FE35D339D6E6A4D0BE5E95E4 /* Pods */,
-				DB6DE6A8E511F3866EBA4077 /* Frameworks */,
+				B90C69B41DA4359B009F5718 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,12 +132,12 @@
 		B90C69B51DA4359B009F5718 /* MubalooSam */ = {
 			isa = PBXGroup;
 			children = (
-				B90C6A001DA53D0A009F5718 /* Storyboards */,
 				B90C69F11DA451EC009F5718 /* Company */,
+				B90C6A001DA53D0A009F5718 /* Storyboards */,
 				B90C69B61DA4359B009F5718 /* AppDelegate.swift */,
+				B90C69EF1DA4519E009F5718 /* AppReducer.swift */,
 				B90C69BD1DA4359B009F5718 /* Assets.xcassets */,
 				B90C69C21DA4359B009F5718 /* Info.plist */,
-				B90C69EF1DA4519E009F5718 /* AppReducer.swift */,
 			);
 			path = MubalooSam;
 			sourceTree = "<group>";
@@ -145,8 +145,8 @@
 		B90C69CA1DA4359B009F5718 /* MubalooSamTests */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69CB1DA4359B009F5718 /* MubalooSamTests.swift */,
 				B90C69CD1DA4359B009F5718 /* Info.plist */,
+				B90C69CB1DA4359B009F5718 /* MubalooSamTests.swift */,
 			);
 			path = MubalooSamTests;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 		B90C69D51DA4359B009F5718 /* MubalooSamUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69D61DA4359B009F5718 /* MubalooSamUITests.swift */,
 				B90C69D81DA4359B009F5718 /* Info.plist */,
+				B90C69D61DA4359B009F5718 /* MubalooSamUITests.swift */,
 			);
 			path = MubalooSamUITests;
 			sourceTree = "<group>";
@@ -163,11 +163,11 @@
 		B90C69EA1DA4394B009F5718 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69E41DA43770009F5718 /* User.swift */,
-				B90C69E61DA43921009F5718 /* Team.swift */,
 				B90C69E81DA43946009F5718 /* Company.swift */,
+				B90C69E61DA43921009F5718 /* Team.swift */,
+				B90C69E41DA43770009F5718 /* User.swift */,
 			);
-			name = models;
+			path = models;
 			sourceTree = "<group>";
 		};
 		B90C69EB1DA450DA009F5718 /* actions */ = {
@@ -175,16 +175,16 @@
 			children = (
 				B90C69F41DA4560A009F5718 /* CompanyActions.swift */,
 			);
-			name = actions;
+			path = actions;
 			sourceTree = "<group>";
 		};
 		B90C69EC1DA450E4009F5718 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69F81DA45DFC009F5718 /* UserCell.swift */,
 				B90C69FA1DA4658B009F5718 /* TeamHeaderCell.swift */,
+				B90C69F81DA45DFC009F5718 /* UserCell.swift */,
 			);
-			name = components;
+			path = components;
 			sourceTree = "<group>";
 		};
 		B90C69ED1DA45122009F5718 /* reducers */ = {
@@ -192,7 +192,7 @@
 			children = (
 				B90C69F21DA45233009F5718 /* CompanyReducer.swift */,
 			);
-			name = reducers;
+			path = reducers;
 			sourceTree = "<group>";
 		};
 		B90C69EE1DA45127009F5718 /* containers */ = {
@@ -201,28 +201,28 @@
 				B90C69F61DA459C0009F5718 /* CompanyCtrl.swift */,
 				B90C69FE1DA4FCA1009F5718 /* UserDetailCtrl.swift */,
 			);
-			name = containers;
+			path = containers;
 			sourceTree = "<group>";
 		};
 		B90C69F11DA451EC009F5718 /* Company */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69EE1DA45127009F5718 /* containers */,
-				B90C69ED1DA45122009F5718 /* reducers */,
-				B90C69EC1DA450E4009F5718 /* components */,
 				B90C69EB1DA450DA009F5718 /* actions */,
+				B90C69EC1DA450E4009F5718 /* components */,
+				B90C69EE1DA45127009F5718 /* containers */,
 				B90C69EA1DA4394B009F5718 /* models */,
+				B90C69ED1DA45122009F5718 /* reducers */,
 			);
-			name = Company;
+			path = Company;
 			sourceTree = "<group>";
 		};
 		B90C6A001DA53D0A009F5718 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				B90C69BA1DA4359B009F5718 /* Main.storyboard */,
 				B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */,
+				B90C69BA1DA4359B009F5718 /* Main.storyboard */,
 			);
-			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		DB6DE6A8E511F3866EBA4077 /* Frameworks */ = {
@@ -568,6 +568,7 @@
 				B90C69BB1DA4359B009F5718 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		B90C69BF1DA4359B009F5718 /* LaunchScreen.storyboard */ = {
@@ -576,6 +577,7 @@
 				B90C69C01DA4359B009F5718 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
