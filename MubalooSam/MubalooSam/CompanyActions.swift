@@ -25,3 +25,7 @@ struct SetSelectedUser: Action {
     let selectedUser: User
 }
 
+struct SetSelectedTeam: Action {
+    let selectedTeam: Team
+}
+

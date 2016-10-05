@@ -36,6 +36,10 @@ extension UserDetailCtrl {
     }
     
     func newState(state: CompanyState) {
+        if let selectedTeam = state.selectedTeam {
+            self.navigationItem.title = selectedTeam.teamName
+        }
+        
         if let selectedUser = state.selectedUser {
             name.text = "\(selectedUser.firstName) \(selectedUser.lastName)"
             role.text = selectedUser.role

@@ -15,6 +15,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Msf-8l-ICo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.26274509800000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,11 +144,13 @@
                             <constraint firstItem="tg7-5W-g0G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s6f-Zm-Les"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sam's Mubaloo" id="Bwx-rJ-Wdc"/>
+                    <navigationItem key="navigationItem" title="Sam's Mubaloo" id="Bwx-rJ-Wdc">
+                        <barButtonItem key="backBarButtonItem" title=" " id="x8g-SS-2PY"/>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="table" destination="tg7-5W-g0G" id="VFY-Hk-O8E"/>
-                        <segue destination="g38-FZ-bkO" kind="show" identifier="UserDetail" action="showDetailViewController:sender:" id="GIG-WD-GwY"/>
+                        <segue destination="g38-FZ-bkO" kind="show" identifier="UserDetail" id="sb3-zv-eHu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -190,10 +193,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jud-KG-DPg" firstAttribute="leading" secondItem="rbu-WL-Ngh" secondAttribute="leading" id="1Cs-Ib-JqL"/>
+                            <constraint firstItem="Jud-KG-DPg" firstAttribute="leading" secondItem="rbu-WL-Ngh" secondAttribute="leading" constant="16" id="1Cs-Ib-JqL"/>
                             <constraint firstItem="95N-Sq-5za" firstAttribute="top" secondItem="EnG-jR-RBD" secondAttribute="bottom" constant="8" id="7di-pA-UCa"/>
-                            <constraint firstAttribute="topMargin" secondItem="Jud-KG-DPg" secondAttribute="top" id="HoA-Te-Wvj"/>
-                            <constraint firstAttribute="trailing" secondItem="Jud-KG-DPg" secondAttribute="trailing" id="P24-MW-xjX"/>
+                            <constraint firstAttribute="topMargin" secondItem="Jud-KG-DPg" secondAttribute="top" constant="-20" id="HoA-Te-Wvj"/>
+                            <constraint firstAttribute="trailing" secondItem="Jud-KG-DPg" secondAttribute="trailing" constant="16" id="P24-MW-xjX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EnG-jR-RBD" secondAttribute="trailing" id="gvb-d3-Vx2"/>
                             <constraint firstAttribute="leadingMargin" secondItem="95N-Sq-5za" secondAttribute="leading" id="lkN-A9-VJr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="95N-Sq-5za" secondAttribute="trailing" id="mFc-7y-eWe"/>
@@ -209,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taW-U4-Nl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="106"/>
+            <point key="canvasLocation" x="992.79999999999995" y="105.69715142428787"/>
         </scene>
     </scenes>
 </document>

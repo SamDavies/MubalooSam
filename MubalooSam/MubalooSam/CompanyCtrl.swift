@@ -110,8 +110,10 @@ extension CompanyCtrl {
     // selection of cell
     @objc(tableView:didSelectRowAtIndexPath:) func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let company = mainStore.state.companyState.company!
-        let user = company.teams[indexPath.section].members[indexPath.row]
+        let team = company.teams[indexPath.section]
+        let user = team.members[indexPath.row]
         mainStore.dispatch(SetSelectedUser(selectedUser: user))
+        mainStore.dispatch(SetSelectedTeam(selectedTeam: team))
         self.performSegue(withIdentifier: "UserDetail", sender: self)
     }
     
