@@ -24,5 +24,11 @@ class UserCell: UITableViewCell {
         role.text = user.role
         
         self.profileImage.kf.setImage(with: URL(string: user.profileImageURL)!, placeholder: UIImage(named: "default.jpg"))
+        
+        if user.teamLead {
+            self.backgroundColor = UIColor(red: 0.99, green: 1.0, blue: 0.698, alpha: 1.0)
+        } else {
+            self.backgroundColor = UIColor.white
+        }
     }
 }

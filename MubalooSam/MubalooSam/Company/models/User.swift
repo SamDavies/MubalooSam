@@ -25,7 +25,7 @@ class User: Object {
         lastName = json["lastName"].string!
         role = json["role"].string!
         profileImageURL = json["profileImageURL"].string!
-        teamLead = json["firstName"].bool ?? false
+        teamLead = json["teamLead"].bool ?? false
         return self
     }
 }
