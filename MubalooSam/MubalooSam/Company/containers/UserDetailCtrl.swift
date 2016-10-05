@@ -17,6 +17,8 @@ class UserDetailCtrl: UIViewController, StoreSubscriber {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.barStyle = .black
     }
 }
 

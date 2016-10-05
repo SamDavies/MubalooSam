@@ -24,6 +24,8 @@ class CompanyCtrl: UIViewController, StoreSubscriber, UITableViewDataSource, UIT
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(CompanyCtrl.getInitialData), for: UIControlEvents.valueChanged)
         self.table.addSubview(refreshControl)
+        
+        navigationController?.navigationBar.barStyle = .black
     }
 }
 
