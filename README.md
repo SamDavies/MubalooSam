@@ -36,7 +36,7 @@ MubalooSam/
        containers/     -- 'Smart' Components such as ViewControllers  
        models/         -- Plain Swift objects which are stored in Realm  
        reducers/       -- Company reducer  
-       ```
+```
 
 ## installation
 
