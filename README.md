@@ -25,6 +25,7 @@ Realm is used The data persistence and is treated as a separate service which sa
 
 ## Code Structure
 
+````
 MubalooSam/  
    AppDelegate.swift    
    AppReducer.swift    -- the root reducer for the app  
@@ -35,6 +36,7 @@ MubalooSam/
        containers/     -- 'Smart' Components such as ViewControllers  
        models/         -- Plain Swift objects which are stored in Realm  
        reducers/       -- Company reducer  
+       ```
 
 ## installation
 
