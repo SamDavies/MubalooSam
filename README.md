@@ -15,7 +15,7 @@ Once complete:
 Zip up the source code and send it over along so we can build it and run it on a device.
 
 Resources:  
-JSON feed: h ttp://developers.mub.lu/resources/team.json
+JSON feed: http://developers.mub.lu/resources/team.json
 
 ## Redux with ReSwift
 I've used a Redux architecture instead of MCV, this gives a unidirectional data flow and a centralized datastore so that the application in more maintainable and extendable.
