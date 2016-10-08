@@ -2,13 +2,14 @@
 
 ## The Task
 
-iOS Developer Test: Interactive organisation chart
-Task: To create a interactive organisation chart app for Mubaloo.
+iOS Developer Test: Interactive organisation chart  
+Task: To create a interactive organisation chart app for Mubaloo.  
 App type: A master / detail style application that runs on iPad and iPhone The application should fulfil the following criteria:
-● Render a list all Mubaloo team members grouped by team from the JSON feed provided.
-● Highlight the team leads visually in order to distinguish them from the rest of the team.
-● Show a detail view of each team member in a new screen when tapped.
-● Store the data so it can be used offline.
+
+- Render a list all Mubaloo team members grouped by team from the JSON feed provided.
+- Highlight the team leads visually in order to distinguish them from the rest of the team.
+- Show a detail view of each team member in a new screen when tapped.
+- Store the data so it can be used offline.
 
 Once complete:  
 Zip up the source code and send it over along so we can build it and run it on a device.
